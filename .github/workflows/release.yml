@@ -4,11 +4,14 @@
 
 on:
   push:
-    branches:
-      - main
+  # todo - un comment
+#    branches:
+#      - main
 name: Run Release Please
 permissions:  # added using https://github.com/step-security/secure-workflows
-  contents: read
+  # todo - tmp test
+  contents: write
+  pull-requests: write
 
 jobs:
   release-please:
